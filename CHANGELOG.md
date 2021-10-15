@@ -1,3 +1,10 @@
+### [0.1.1](https://github.com/CyanSalt/font-cloak/compare/0.1.0...0.1.1) (2021-10-15)
+
+
+### Bug Fixes
+
+* webpack loader path ([654de02](https://github.com/CyanSalt/font-cloak/commit/654de02a88cc91b27fcbe104da641aca836aa8fb))
+
 ## 0.1.0 (2021-10-15)
 
 
