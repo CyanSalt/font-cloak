@@ -1,7 +1,7 @@
 const { generateFonts, generateMagicString } = require('./lib/generate')
 const webpackUtils = require('./lib/webpack/utils')
 
-const webpackLoader = require.resolve('./webpack/loader')
+const webpackLoader = require.resolve('./lib/webpack/loader')
 
 module.exports = {
   generateFonts,
