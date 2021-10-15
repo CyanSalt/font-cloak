@@ -51,6 +51,14 @@ module.exports = {
         resourceQuery: /cloak/,
         use: [
           {
+            loader: 'file-loader',
+            options: {
+              name: fontCloak.webpackUtils.interpolateName(
+                '[name].[hash:8].[ext]', // for example
+              ),
+            },
+          },
+          {
             loader: fontCloak.webpackLoader,
             options: {
               seed: FONT_CLOAK_SEED,
