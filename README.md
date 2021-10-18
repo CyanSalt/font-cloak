@@ -13,9 +13,9 @@ npm install font-cloak
 ## Usage
 
 ```javascript
-const { generateFonts } = require('font-cloak')
+const { generateFont } = require('font-cloak')
 
-const newFontBuffer = generateFonts('/path/to/font.ttf', {
+const newFontBuffer = generateFont('/path/to/font.ttf', {
   type: 'woff2',
   seed: String(new Date()),
 })
@@ -104,6 +104,6 @@ element.style.fontFamily = 'MyFontCloak'
 
 ## How It Works
 
-`generateFonts` will shuffle the characters within the font and places them in the [Private Use Areas Unicode block](https://en.wikipedia.org/wiki/Private_Use_Areas) to generate a new font; `generateMagicString` will save the random number information in a hexadecimal string.
+`generateFont` will shuffle the characters within the font and places them in the [Private Use Areas Unicode block](https://en.wikipedia.org/wiki/Private_Use_Areas) to generate a new font; `generateMagicString` will save the random number information in a hexadecimal string.
 
 **Note**: Given the common use cases, the font mapping contains only the [Basic Latin Unicode block](https://en.wikipedia.org/wiki/Basic_Latin_(Unicode_block)); the runtime functions will also handle the corresponding character set only.
