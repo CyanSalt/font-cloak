@@ -1,3 +1,10 @@
+### [0.1.2](https://github.com/CyanSalt/font-cloak/compare/0.1.1...0.1.2) (2021-10-18)
+
+
+### Bug Fixes
+
+* rename to `generateFont` ([d11cf45](https://github.com/CyanSalt/font-cloak/commit/d11cf45fed510fbe02139a004143a2a72b38f622))
+
 ### [0.1.1](https://github.com/CyanSalt/font-cloak/compare/0.1.0...0.1.1) (2021-10-15)
 
 
