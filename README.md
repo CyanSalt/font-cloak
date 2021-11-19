@@ -49,6 +49,25 @@ module.exports = {
       {
         test: /\.ttf$/i,
         resourceQuery: /cloak/,
+        type: 'asset',
+        generator: {
+          filename: fontCloak.webpackUtils.interpolateName(
+            '[name].[hash:8][ext]', // for example
+          ),
+        },
+        use: [
+          {
+            loader: fontCloak.webpackLoader,
+            options: {
+              seed: FONT_CLOAK_SEED,
+            },
+          },
+        ],
+      },
+      // for webpack@<=4
+      {
+        test: /\.ttf$/i,
+        resourceQuery: /cloak/,
         use: [
           {
             loader: 'file-loader',
@@ -84,6 +103,9 @@ You can then use in your code (with something like [css-loader](https://github.c
 @font-face {
   font-family: 'MyFontCloak';
   font-weight: 300;
+  src: url('/path/to/font.ttf?cloak=.woff2') format('woff2'),
+    url('/path/to/font.ttf?cloak=.woff') format('woff');
+  /* for webpack@<=4 */
   src: url('/path/to/font.ttf?cloak=woff2') format('woff2'),
     url('/path/to/font.ttf?cloak=woff') format('woff');
 }
