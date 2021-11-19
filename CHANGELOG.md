@@ -1,3 +1,10 @@
+### [0.1.3](https://github.com/CyanSalt/font-cloak/compare/0.1.2...v0.1.3) (2021-11-19)
+
+
+### Bug Fixes
+
+* support webpack@5 ([f91893f](https://github.com/CyanSalt/font-cloak/commit/f91893f3fce16c8c647676f6bff81bacc63cdf71))
+
 ### [0.1.2](https://github.com/CyanSalt/font-cloak/compare/0.1.1...0.1.2) (2021-10-18)
 
 
