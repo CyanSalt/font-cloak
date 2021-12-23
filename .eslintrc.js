@@ -1,5 +1,5 @@
 module.exports = {
   extends: [
-    '@cyansalt',
+    '@cyansalt/preset',
   ],
 }
