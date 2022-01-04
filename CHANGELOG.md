@@ -1,3 +1,10 @@
+### [0.1.4](https://github.com/CyanSalt/font-cloak/compare/v0.1.3...v0.1.4) (2022-01-04)
+
+
+### Bug Fixes
+
+* add typing declaration for runtime ([541860a](https://github.com/CyanSalt/font-cloak/commit/541860a5d663bb5f8c48f6c4955a308cc2577dea))
+
 ### [0.1.3](https://github.com/CyanSalt/font-cloak/compare/0.1.2...v0.1.3) (2021-11-19)
 
 
