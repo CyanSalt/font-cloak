@@ -3,6 +3,9 @@
   "version": "0.1.4",
   "description": "Encrypt your data with random fonts",
   "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
     "release": "release-it",
     "lint": "eslint --ignore-path .gitignore --fix ."
