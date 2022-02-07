@@ -1,3 +1,10 @@
+## [0.2.0](https://github.com/CyanSalt/font-cloak/compare/v0.1.4...v0.2.0) (2022-02-07)
+
+
+### Features
+
+* change resource path in webpack loader ([96cad8b](https://github.com/CyanSalt/font-cloak/commit/96cad8bf723b2b1da2fdd9d05821625f0ed0dbaa))
+
 ### [0.1.4](https://github.com/CyanSalt/font-cloak/compare/v0.1.3...v0.1.4) (2022-01-04)
 
 
