@@ -51,9 +51,7 @@ module.exports = {
         resourceQuery: /cloak/,
         type: 'asset',
         generator: {
-          filename: fontCloak.webpackUtils.interpolateName(
-            '[name].[hash:8][ext]', // for example
-          ),
+          filename: '[name].[hash:8][ext]', // for example
         },
         use: [
           {
@@ -72,9 +70,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: fontCloak.webpackUtils.interpolateName(
-                '[name].[hash:8].[ext]', // for example
-              ),
+              name: '[name].[hash:8].[ext]', // for example
             },
           },
           {
