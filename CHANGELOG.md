@@ -1,3 +1,10 @@
+## [0.3.0](https://github.com/CyanSalt/font-cloak/compare/v0.2.0...v0.3.0) (2023-02-06)
+
+
+### Features
+
+* support postcss ([ec3b7d9](https://github.com/CyanSalt/font-cloak/commit/ec3b7d9fae9ccf54553db1a5f252c83866127fed))
+
 ## [0.2.0](https://github.com/CyanSalt/font-cloak/compare/v0.1.4...v0.2.0) (2022-02-07)
 
 
