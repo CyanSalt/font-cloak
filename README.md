@@ -50,8 +50,12 @@ Usually we use it like this:
 ```javascript
 const { encode } = require('font-cloak/lib/runtime')
 
+// For eslint
+// /* global FONT_CLOAK_MAGIC_STRING */
+// Or for typescript
+// declare const FONT_CLOAK_MAGIC_STRING: string
+
 function encodeFontCloak(text) {
-  // eslint-disable-next-line no-undef
   return encode(text, FONT_CLOAK_MAGIC_STRING)
 }
 
