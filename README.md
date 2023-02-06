@@ -28,82 +28,22 @@ After storing the `newFontBuffer` in a suitable file (e.g. `font-cloak.woff2`), 
 ```javascript
 const { encode } = require('font-cloak/lib/runtime')
 
-encode('1920*1080', magicString) //
+encode('1920*1080', magicString)
 ```
 
-### For Webpack
+### Integrations with bundlers
 
-When you use webpack, you can usually configure it in a simple way as follows:
-
-```javascript
-const fontCloak = require('font-cloak')
-const webpack = require('webpack')
-
-const FONT_CLOAK_SEED = String(new Date())
-
-// webpack.config.js
-module.exports = {
-  // ...
-  module: {
-    rules: [
-      {
-        test: /\.ttf$/i,
-        resourceQuery: /cloak/,
-        type: 'asset',
-        generator: {
-          filename: '[name].[hash:8][ext]', // for example
-        },
-        use: [
-          {
-            loader: fontCloak.webpackLoader,
-            options: {
-              seed: FONT_CLOAK_SEED,
-            },
-          },
-        ],
-      },
-      // for webpack@<=4
-      {
-        test: /\.ttf$/i,
-        resourceQuery: /cloak/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[hash:8].[ext]', // for example
-            },
-          },
-          {
-            loader: fontCloak.webpackLoader,
-            options: {
-              seed: FONT_CLOAK_SEED,
-            },
-          },
-        ],
-      },
-    ],
-  },
-  plugins: [
-    new webpack.DefinePlugin({
-      FONT_CLOAK_MAGIC_STRING: JSON.stringify(
-        fontCloak.generateMagicString(FONT_CLOAK_SEED),
-      ),
-    }),
-  ],
-}
-```
-
-You can then use in your code (with something like [css-loader](https://github.com/webpack-contrib/css-loader)):
+Usually we use it like this:
 
 ```css
 @font-face {
   font-family: 'MyFontCloak';
   font-weight: 300;
-  src: url('/path/to/font.ttf?cloak=.woff2') format('woff2'),
-    url('/path/to/font.ttf?cloak=.woff') format('woff');
-  /* for webpack@<=4 */
   src: url('/path/to/font.ttf?cloak=woff2') format('woff2'),
     url('/path/to/font.ttf?cloak=woff') format('woff');
+  /* for webpack@>=5 */
+  src: url('/path/to/font.ttf?cloak=.woff2') format('woff2'),
+    url('/path/to/font.ttf?cloak=.woff') format('woff');
 }
 ```
 
@@ -120,7 +60,13 @@ element.textContent = encodeFontCloak(MY_DATA)
 element.style.fontFamily = 'MyFontCloak'
 ```
 
-## How It Works
+To achieve these results, we can configure the bundler as:
+
+- Webpack: See [Webpack]('./webpack')
+  - Vue CLI: See [Vue CLI]('./vue-cli')
+- Rollup, Vite, etc.: See [PostCSS]('./postcss')
+
+## How it works
 
 `generateFont` will shuffle the characters within the font and places them in the [Private Use Areas Unicode block](https://en.wikipedia.org/wiki/Private_Use_Areas) to generate a new font; `generateMagicString` will save the random number information in a hexadecimal string.
 
