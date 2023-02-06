@@ -62,9 +62,9 @@ element.style.fontFamily = 'MyFontCloak'
 
 To achieve these results, we can configure the bundler as:
 
-- Webpack: See [Webpack]('./webpack')
-  - Vue CLI: See [Vue CLI]('./vue-cli')
-- Rollup, Vite, etc.: See [PostCSS]('./postcss')
+- Webpack: See [Webpack](./lib/webpack)
+  - Vue CLI: See [Vue CLI](./lib/vue-cli)
+- Rollup, Vite, etc.: See [PostCSS](./lib/postcss)
 
 ## How it works
 
