@@ -1,6 +1,6 @@
 {
   "name": "font-cloak",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Encrypt your data with random fonts",
   "main": "index.js",
   "directories": {

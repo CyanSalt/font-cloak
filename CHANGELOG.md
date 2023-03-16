@@ -1,3 +1,10 @@
+### [0.3.1](https://github.com/CyanSalt/font-cloak/compare/v0.3.0...v0.3.1) (2023-03-16)
+
+
+### Bug Fixes
+
+* create directory recursively ([42e8bc1](https://github.com/CyanSalt/font-cloak/commit/42e8bc132f27cfd97acf19f3f7b312ad8c1e9cbd))
+
 ## [0.3.0](https://github.com/CyanSalt/font-cloak/compare/v0.2.0...v0.3.0) (2023-02-06)
 
 
