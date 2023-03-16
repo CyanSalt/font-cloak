@@ -1,3 +1,12 @@
+
+
+### [0.3.2](https://github.com/CyanSalt/font-cloak/compare/v0.3.1...v0.3.2) (2023-03-16)
+
+
+### Bug Fixes
+
+* update dev deps ([6c4a86d](https://github.com/CyanSalt/font-cloak/commit/6c4a86d46adcaa98f449a5b3bb8b88aa1ef6d198))
+
 ### [0.3.1](https://github.com/CyanSalt/font-cloak/compare/v0.3.0...v0.3.1) (2023-03-16)
 
 
@@ -53,4 +62,3 @@
 ### Features
 
 * init ([53fa26f](https://github.com/CyanSalt/font-cloak/commit/53fa26f89bbf4907fb96e1f8c82e13a9633ab690))
-
