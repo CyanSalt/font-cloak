@@ -1,5 +1,7 @@
 # font-cloak
 
+[![npm](https://img.shields.io/npm/v/font-cloak.svg)](https://www.npmjs.com/package/font-cloak)
+
 Encrypt your data with random fonts.
 
 Mainly based on [font-carrier](https://github.com/purplebamboo/font-carrier).
