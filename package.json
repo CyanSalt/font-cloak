@@ -30,9 +30,9 @@
     "semver": "^7.3.8"
   },
   "devDependencies": {
-    "@cyansalt/eslint-config-preset": "^1.12.4",
-    "@release-it/conventional-changelog": "^5.1.1",
-    "release-it": "^15.8.0"
+    "@cyansalt/eslint-config-preset": "^1.17.0",
+    "@release-it/conventional-changelog": "^8.0.1",
+    "release-it": "^17.0.0"
   },
   "peerDependencies": {
     "loader-utils": ">=1.2.3",

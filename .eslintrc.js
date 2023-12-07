@@ -5,4 +5,7 @@ module.exports = {
   ignorePatterns: [
     '**/*.d.ts',
   ],
+  rules: {
+    'unicorn/prefer-node-protocol': 'off',
+  },
 }
