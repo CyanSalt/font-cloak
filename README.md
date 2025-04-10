@@ -6,6 +6,11 @@ Encrypt your data with random fonts.
 
 Mainly based on [font-carrier](https://github.com/purplebamboo/font-carrier).
 
+> [!WARNING]
+> Before using this package, make sure you are aware of the relevant legal risks. For example, [SIL 1.1](https://openfontlicense.org/open-font-license-official-text/) prohibits retaining the "Reserved Font Name" after modifying the font; the legal statements of some fonts (such as [Alibaba Puhuiti](https://www.yuque.com/yiguang-wkqc2/puhuiti/nus9wiinq4aeiegy)) do not allow users to modify or reorganize the fonts in the way used by this package.
+>
+>This package is not responsible for any legal issues arising from font licensing.
+
 ## Installation
 
 ```shell
